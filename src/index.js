@@ -1,14 +1,15 @@
-console.log('Hello world')
-
 // Initialize functions
 const init = () => {
+    console.log('Starting ITU Alphabet')
     getAlphaItems()
 }
 
 // Function definitions
 const getAlphaItems = () => {
-    fetch('./assets/alpha.json')
-        .then(response => response.json())
+    fetch('./alpha.json')
+        .then(response => {
+            return response.json()
+        })
         .then(data => {
             console.log(data)
         })
