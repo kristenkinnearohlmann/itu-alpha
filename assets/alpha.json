@@ -1,3 +1,8 @@
-{
-    
-}
+[
+    {
+        "letter": "A",
+        "phonetic_word": "Alpha",
+        "pronunciation": "al-fah",
+        "stress_syllable": [1]
+    }
+]
