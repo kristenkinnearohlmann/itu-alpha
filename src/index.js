@@ -6,13 +6,14 @@ const init = () => {
 
 // Function definitions
 const getAlphaItems = () => {
-    fetch('./alpha.json')
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            console.log(data)
-        })
+    // fetch('./alpha.json')
+    //     .then(response => {
+    //         return response.json()
+    //     })
+    //     .then(data => {
+    //         console.log(data)
+    //     })
+    console.log(alpha)
 }
 
 // Load page
