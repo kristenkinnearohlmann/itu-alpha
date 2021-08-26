@@ -1,19 +1,13 @@
 // Initialize functions
 const init = () => {
     console.log('Starting ITU Alphabet')
-    getAlphaItems()
+    loadAlphaItems()
 }
 
 // Function definitions
-const getAlphaItems = () => {
-    // fetch('./alpha.json')
-    //     .then(response => {
-    //         return response.json()
-    //     })
-    //     .then(data => {
-    //         console.log(data)
-    //     })
-    console.log(alpha)
+const loadAlphaItems = () => {
+    console.log(alpha)    
+    return alpha
 }
 
 // Load page
