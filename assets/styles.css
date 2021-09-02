@@ -6,3 +6,10 @@
     font-size: 5rem;
     text-align: center;
 }
+
+#phonetic-word,
+#pronounce-container,
+#pronunciation {
+    font-size: 2rem;
+    text-align: center;
+}
