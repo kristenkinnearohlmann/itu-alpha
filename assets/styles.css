@@ -1,3 +1,8 @@
 #display-frame {
     border: 1px solid grey;
 }
+
+#display-letter {
+    font-size: 5rem;
+    text-align: center;
+}
