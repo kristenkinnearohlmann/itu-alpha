@@ -1,4 +1,5 @@
 const displayLetter = document.getElementById('display-letter')
+const displayLetterImg = document.getElementById('display-letter-img')
 const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
 
@@ -19,6 +20,7 @@ const displayInitialAlpha = () => {
     console.log('Display function')
     console.log(alpha[0])
     displayLetter.textContent = alpha[0].letter
+    displayLetterImg.innerHTML = '<img src="">'
     phoneticWord.textContent = alpha[0].phonetic_word
     pronunciation.textContent = alpha[0].pronunciation
 }
