@@ -1,5 +1,7 @@
 #display-frame {
     border: 1px solid grey;
+    margin: 0 auto;
+    width: 95%;
 }
 
 #display-letter {
@@ -25,4 +27,8 @@
 #pronunciation {
     font-size: 1.25rem;
     text-align: center;
+}
+
+#pronounce-container {
+    margin-bottom: 15px;
 }
