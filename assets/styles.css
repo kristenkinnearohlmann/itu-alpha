@@ -8,11 +8,11 @@
 }
 
 #display-letter-img {
-    background-color: blueviolet;
     border: 2px grey solid;
-    margin: 0 auto;
-    width: 200px;
     height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
 }
 
 #phonetic-word {

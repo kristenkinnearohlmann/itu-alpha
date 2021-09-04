@@ -20,7 +20,13 @@ const displayInitialAlpha = () => {
     console.log('Display function')
     console.log(alpha[0])
     displayLetter.textContent = alpha[0].letter
-    displayLetterImg.innerHTML = '<img src="">'
+    // TODO: Update logic to check for image source null
+    if (1 === 0) {
+        displayLetterImg.innerHTML = '<img src="" />'
+    } else {
+        displayLetterImg.innerHTML = '<p>No image available</p>'
+    }
+    
     phoneticWord.textContent = alpha[0].phonetic_word
     pronunciation.textContent = alpha[0].pronunciation
     console.log(alpha[0].stress_syllable)
