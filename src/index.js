@@ -23,6 +23,8 @@ const displayInitialAlpha = () => {
     displayLetterImg.innerHTML = '<img src="">'
     phoneticWord.textContent = alpha[0].phonetic_word
     pronunciation.textContent = alpha[0].pronunciation
+    console.log(alpha[0].stress_syllable)
+    console.log(alpha[0].pronunciation.split('-'))
 }
 
 // Load page
