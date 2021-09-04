@@ -29,6 +29,11 @@ const displayInitialAlpha = () => {
     
     phoneticWord.textContent = alpha[0].phonetic_word
     pronunciation.textContent = alpha[0].pronunciation
+
+    stressPronounce(alpha[0].pronunciation, alpha[0].stress_syllable)
+}
+
+const stressPronounce = (pronunciation, stress_syllable) => {
     console.log(alpha[0].stress_syllable)
     console.log(alpha[0].pronunciation.split('-'))
 }
