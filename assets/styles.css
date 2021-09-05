@@ -13,8 +13,14 @@
     border: 2px grey solid;
     height: 200px;
     margin: 0 auto;
-    text-align: center;
     width: 200px;
+}
+
+#no-img {
+    padding-bottom: 90px;
+    padding-top: 90px;
+    text-align: center;
+    width: 100%;
 }
 
 #phonetic-word {

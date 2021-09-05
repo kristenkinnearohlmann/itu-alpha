@@ -22,9 +22,9 @@ const displayInitialAlpha = () => {
     displayLetter.textContent = alpha[0].letter
     // TODO: Update logic to check for image source null
     if (1 === 0) {
-        displayLetterImg.innerHTML = '<img src="" />'
+        displayLetterImg.innerHTML = '<div><img src="" /></div>'
     } else {
-        displayLetterImg.innerHTML = '<p>No image available</p>'
+        displayLetterImg.innerHTML = '<div id="no-img"><span>No image available</span></div>'
     }
     
     phoneticWord.textContent = alpha[0].phonetic_word
