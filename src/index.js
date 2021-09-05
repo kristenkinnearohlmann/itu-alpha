@@ -19,6 +19,10 @@ const loadAlphaItems = () => {
 const displayInitialAlpha = () => {
     console.log('Display function')
     console.log(alpha[0])
+
+    const currentLetter = new AlphaLetter(alpha[0])
+    console.log(currentLetter)
+
     displayLetter.textContent = alpha[0].letter
     // TODO: Update logic to check for image source null
     if (1 === 0) {
