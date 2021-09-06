@@ -13,6 +13,6 @@ class AlphaLetter {
 
     styleStressSyllables() {
         console.log('Method: styleStressSyllables')
-        return stressedWord
+        // return stressedWord
     }
 }

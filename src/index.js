@@ -22,6 +22,7 @@ const displayInitialAlpha = () => {
 
     const currentLetter = new AlphaLetter(alpha[0])
     console.log(currentLetter)
+    console.log(currentLetter.styleStressSyllables())
 
     displayLetter.textContent = alpha[0].letter
     // TODO: Update logic to check for image source null
