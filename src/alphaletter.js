@@ -14,8 +14,15 @@ class AlphaLetter {
     stressPronounce() {
         console.log('Method: stressPronounce')
         console.log(this._stressSyllable)
-        console.log(this._stressSyllable.map(syllable => syllable-1))
+        const stressSyllableIndexed = this._stressSyllable.map(syllable => syllable-1)
         console.log(this._pronunciation.split('-'))
+        this._pronunciation.split('-').map((segment, index) => {
+            if (stressSyllableIndexed.includes(index)) {
+                console.log('Stressed')
+            } else {
+                console.log('Unstressed')
+            }
+        })
         // return stressedWord
     }
 }
