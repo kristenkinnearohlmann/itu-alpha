@@ -22,7 +22,7 @@ const displayInitialAlpha = () => {
 
     const currentLetter = new AlphaLetter(alpha[0])
     console.log(currentLetter)
-    console.log(currentLetter.styleStressSyllables())
+    console.log(currentLetter.stressPronounce())
 
     displayLetter.textContent = alpha[0].letter
     // TODO: Update logic to check for image source null
@@ -35,12 +35,6 @@ const displayInitialAlpha = () => {
     phoneticWord.textContent = alpha[0].phonetic_word
     pronunciation.textContent = alpha[0].pronunciation
 
-    stressPronounce(alpha[0].pronunciation, alpha[0].stress_syllable)
-}
-
-const stressPronounce = (pronunciation, stress_syllable) => {
-    console.log(alpha[0].stress_syllable)
-    console.log(alpha[0].pronunciation.split('-'))
 }
 
 // Load page

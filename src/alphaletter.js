@@ -11,10 +11,11 @@ class AlphaLetter {
         return this._letter
     }
 
-    styleStressSyllables() {
-        console.log('Method: styleStressSyllables')
+    stressPronounce() {
+        console.log('Method: stressPronounce')
         console.log(this._stressSyllable)
         console.log(this._stressSyllable.map(syllable => syllable-1))
+        console.log(this._pronunciation.split('-'))
         // return stressedWord
     }
 }
