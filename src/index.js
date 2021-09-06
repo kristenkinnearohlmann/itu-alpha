@@ -26,7 +26,7 @@ const displayInitialAlpha = () => {
     displayLetter.textContent = alpha[0].letter
     // TODO: Update logic to check for image source null
     if (alpha[0].symbol_img_src) {
-        displayLetterImg.innerHTML = `<div><img src="${alpha[0].symbol_img_src}" /></div>`
+        displayLetterImg.innerHTML = `<div><img class="img-display-200" src="${alpha[0].symbol_img_src}" /></div>`
     } else {
         displayLetterImg.innerHTML = '<div id="no-img"><span>No image available</span></div>'
     }
