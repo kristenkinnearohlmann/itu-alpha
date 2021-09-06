@@ -18,22 +18,23 @@ const loadAlphaItems = () => {
 
 const displayInitialAlpha = () => {
     console.log('Display function')
-    console.log(alpha[0])
+    console.log(alpha[9])
 
-    const currentLetter = new AlphaLetter(alpha[0])
+    const currentLetter = new AlphaLetter(alpha[9])
     console.log(currentLetter)
     console.log(currentLetter.stressPronounce())
 
-    displayLetter.textContent = alpha[0].letter
+    displayLetter.textContent = alpha[9].letter
     // TODO: Update logic to check for image source null
-    if (alpha[0].symbol_img_src) {
-        displayLetterImg.innerHTML = `<div><img class="img-display-200" src="${alpha[0].symbol_img_src}" /></div>`
+    if (alpha[9].symbol_img_src) {
+        displayLetterImg.innerHTML = `<div><img class="img-display-200" src="${alpha[9].symbol_img_src}" /></div>`
     } else {
         displayLetterImg.innerHTML = '<div id="no-img"><span>No image available</span></div>'
     }
     
-    phoneticWord.textContent = alpha[0].phonetic_word
-    pronunciation.textContent = alpha[0].pronunciation
+    phoneticWord.textContent = alpha[9].phonetic_word
+    // pronunciation.textContent = alpha[9].pronunciation
+    pronunciation.innerHTML = currentLetter.stressPronounce()
 
 }
 
