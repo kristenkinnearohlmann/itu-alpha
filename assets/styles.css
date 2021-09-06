@@ -8,6 +8,10 @@ header {
     flex-flow: row nowrap;
 }
 
+.display-nav {
+    width: 25px;
+}
+
 #display-frame {
     border: 1px solid grey;
     margin: 0 auto;
