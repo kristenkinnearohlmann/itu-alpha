@@ -3,6 +3,11 @@ header {
     width: 95%;
 }
 
+#display-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 #display-frame {
     border: 1px solid grey;
     margin: 0 auto;

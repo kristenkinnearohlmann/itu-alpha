@@ -23,6 +23,7 @@ const displayInitialAlpha = () => {
     console.log(currentLetter)
 
     displayLetter.textContent = currentLetter.letter
+    // TODO: Move to class file
     if (currentLetter.symbolImgSrc) {
         displayLetterImg.innerHTML = `<div><img class="img-display-200" src="${currentLetter.symbolImgSrc}" /></div>`
     } else {
