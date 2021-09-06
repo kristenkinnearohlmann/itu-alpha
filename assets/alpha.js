@@ -4,7 +4,7 @@ const alpha = [
         "phonetic_word": "Alpha",
         "pronunciation": "al-fah",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_alpha_880653.png"
     },
     {
         "letter": "B",
