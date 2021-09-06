@@ -13,16 +13,19 @@ class AlphaLetter {
 
     stressPronounce() {
         console.log('Method: stressPronounce')
-        console.log(this._stressSyllable)
         const stressSyllableIndexed = this._stressSyllable.map(syllable => syllable-1)
-        console.log(this._pronunciation.split('-'))
-        this._pronunciation.split('-').map((segment, index) => {
+
+        console.log(this._pronunciation.split('-').map((segment, index) => {
             if (stressSyllableIndexed.includes(index)) {
                 console.log('Stressed')
+                console.log(`<em>${segment}</em>`)
+                return `<em>${segment}</em>`
             } else {
                 console.log('Unstressed')
+                console.log(`${segment}`)
+                return `${segment}`
             }
-        })
+        }).join('-'))
         // return stressedWord
     }
 }
