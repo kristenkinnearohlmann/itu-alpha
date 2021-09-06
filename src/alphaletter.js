@@ -11,8 +11,15 @@ class AlphaLetter {
         return this._letter
     }
 
+    get phoneticWord() {
+        return this._phoneticWord
+    }
+
+    get symbolImgSrc() {
+        return this._symbolImgSrc
+    }
+
     stressPronounce() {
-        console.log('Method: stressPronounce')
         const stressSyllableIndexed = this._stressSyllable.map(syllable => syllable-1)
 
         return this._pronunciation.split('-').map((segment, index) => {
