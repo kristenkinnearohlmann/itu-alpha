@@ -4,12 +4,7 @@ header {
 }
 
 #display-container {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.display-nav {
-    width: 25px;
+    border: 1px solid blue;
 }
 
 #display-frame {
