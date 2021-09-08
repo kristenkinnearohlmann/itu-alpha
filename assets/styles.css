@@ -12,10 +12,19 @@ header {
 }
 
 .display-nav {
+    color: grey;
     font-size: 3.5rem;
     font-weight: 700;
     padding-bottom: 200px;
     padding-top: 200px;
+}
+
+.display-nav-left {
+    padding-left: 5px;
+}
+
+.display-nav-right {
+    padding-right: 5px;
 }
 
 #display-frame {
