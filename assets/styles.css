@@ -4,7 +4,7 @@ header {
 }
 
 #display-container {
-    border: 1px solid blue;
+    border: 1px solid grey;
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
@@ -19,7 +19,6 @@ header {
 }
 
 #display-frame {
-    border: 1px solid grey;
     margin: 0 auto;
     width: 90%;
 }
