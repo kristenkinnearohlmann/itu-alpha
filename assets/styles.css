@@ -11,6 +11,10 @@ header {
     width: 50%;
 }
 
+.display-nav {
+    font-weight: 700;
+}
+
 #display-frame {
     border: 1px solid grey;
     margin: 0 auto;
