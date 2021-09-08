@@ -8,12 +8,13 @@ header {
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
+    width: 50%;
 }
 
 #display-frame {
     border: 1px solid grey;
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
 }
 
 #display-letter {
