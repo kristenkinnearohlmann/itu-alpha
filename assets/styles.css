@@ -20,6 +20,10 @@ header {
     padding-top: 150px;
 }
 
+.display-nav:hover {
+    cursor: pointer;
+}
+
 #display-frame {
     margin: 0 auto;
     width: 90%;
