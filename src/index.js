@@ -2,12 +2,13 @@ const displayLetter = document.getElementById('display-letter')
 const displayLetterImg = document.getElementById('display-letter-img')
 const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
+let alphaPosition = 0
 
 // Initialize functions
 const init = () => {
     console.log('Starting ITU Alphabet')
     loadAlphaItems()
-    displayInitialAlpha()
+    displayAlpha()
 }
 
 // Function definitions
@@ -16,10 +17,10 @@ const loadAlphaItems = () => {
     return alpha
 }
 
-const displayInitialAlpha = () => {
+const displayAlpha = () => {
     console.log('Display function')
 
-    const currentLetter = new AlphaLetter(alpha[14])
+    const currentLetter = new AlphaLetter(alpha[alphaPosition])
     console.log(currentLetter)
 
     displayLetter.textContent = currentLetter.letter
@@ -34,6 +35,11 @@ const displayInitialAlpha = () => {
     pronunciation.innerHTML = currentLetter.stressPronounce()
 
 }
+
+document.getElementById('arrow-left').addEventListener('click', () => {
+    alphaPosition === 0 ? alphaPosition = 25 : alphaPosition--
+    displayAlpha()
+})
 
 // Load page
 init()
