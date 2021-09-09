@@ -26,7 +26,7 @@ const displayAlpha = () => {
     displayLetter.textContent = currentLetter.letter
     // TODO: Move to class file
     if (currentLetter.symbolImgSrc) {
-        displayLetterImg.innerHTML = `<div><img class="img-display-200" src="${currentLetter.symbolImgSrc}" /></div>`
+        displayLetterImg.innerHTML = `<div><img class="img-display-200 img-reduce" src="${currentLetter.symbolImgSrc}" /></div>`
     } else {
         displayLetterImg.innerHTML = '<div id="no-img"><span>No image available</span></div>'
     }

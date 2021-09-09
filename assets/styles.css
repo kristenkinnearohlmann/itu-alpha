@@ -1,6 +1,6 @@
 header {
     margin: 0 auto;
-    width: 95%;
+    width: 50%;
 }
 
 #display-container {
@@ -48,7 +48,7 @@ header {
     width: 200px;
 }
 
-img {
+.img-reduce {
     height: 195px;
     width: 195px;
 }
