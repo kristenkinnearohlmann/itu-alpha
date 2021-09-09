@@ -95,21 +95,21 @@ const alpha = [
         "phonetic_word": "November",
         "pronunciation": "noh-vem-ber",
         "stress_syllable": [2],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_thanksgiving turkey_2921722.png"
     },
     {
         "letter": "O",
         "phonetic_word": "Oscar",
         "pronunciation": "oss-cah",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_oscar_1190606.png"
     },
     {
         "letter": "P",
         "phonetic_word": "Papa",
         "pronunciation": "pah-pah",
         "stress_syllable": [2],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_dad with kid_3841535.png"
     },
     {
         "letter": "Q",
