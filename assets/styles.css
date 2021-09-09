@@ -39,7 +39,14 @@ header {
 
 .img-display-200 {
     height: 200px;
+    margin: 0 auto;
+    padding: 5px;
     width: 200px;
+}
+
+img {
+    height: 195px;
+    width: 195px;
 }
 
 #no-img {
