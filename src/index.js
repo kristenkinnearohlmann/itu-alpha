@@ -36,15 +36,15 @@ const displayAlpha = () => {
 
 }
 
-// document.getElementById('arrow-left').addEventListener('click', () => {
-//     alphaPosition === 0 ? alphaPosition = 25 : alphaPosition--
-//     displayAlpha()
-// })
+document.getElementById('arrow-left').addEventListener('click', () => {
+    alphaPosition === 0 ? alphaPosition = 25 : alphaPosition--
+    displayAlpha()
+})
 
-// document.getElementById('arrow-right').addEventListener('click', () => {
-//     alphaPosition === 25 ? alphaPosition = 0 : alphaPosition++
-//     displayAlpha()
-// })
+document.getElementById('arrow-right').addEventListener('click', () => {
+    alphaPosition === 25 ? alphaPosition = 0 : alphaPosition++
+    displayAlpha()
+})
 
 // Load page
 init()
