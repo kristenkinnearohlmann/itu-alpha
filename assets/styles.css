@@ -8,16 +8,19 @@ header {
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
-    padding: 0 15px;
-    width: 50%;
+    width: 90%;
 }
 
 .display-nav {
-    color: grey;
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding-bottom: 150px;
-    padding-top: 150px;
+    padding: 44% 0;
+}
+
+#arrow-left {
+    padding-left: 15px;
+}
+
+#arrow-right {
+    padding-right: 15px;
 }
 
 .display-nav:hover {
@@ -81,11 +84,19 @@ header {
     header {
         width: 75%;
     }
+
+    #display-container {
+        width: 70%;
+    }
 }
 
 /* media query for generic desktop */
 @media only screen and (min-width: 768px) {
     header {
+        width: 50%;
+    }
+
+    #display-container {
         width: 50%;
     }
 }
