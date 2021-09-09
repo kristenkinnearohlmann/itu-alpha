@@ -41,5 +41,10 @@ document.getElementById('arrow-left').addEventListener('click', () => {
     displayAlpha()
 })
 
+document.getElementById('arrow-right').addEventListener('click', () => {
+    alphaPosition === 25 ? alphaPosition = 0 : alphaPosition++
+    displayAlpha()
+})
+
 // Load page
 init()
