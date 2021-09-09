@@ -116,28 +116,28 @@ const alpha = [
         "phonetic_word": "Quebec",
         "pronunciation": "keh-beck",
         "stress_syllable": [2],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Fleur de lys_215574.png"
     },
     {
         "letter": "R",
         "phonetic_word": "Romeo",
         "pronunciation": "row-me-oh",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_love someone_3817181.png"
     },
     {
         "letter": "S",
         "phonetic_word": "Sierra",
         "pronunciation": "see-air-ah",
         "stress_syllable": [2],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Mountains_1686199.png"
     },
     {
         "letter": "T",
         "phonetic_word": "Tango",
         "pronunciation": "tang-go",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Tango_2010348.png"
     },
     {
         "letter": "U",
