@@ -19,7 +19,7 @@ const loadAlphaItems = () => {
 const displayInitialAlpha = () => {
     console.log('Display function')
 
-    const currentLetter = new AlphaLetter(alpha[0])
+    const currentLetter = new AlphaLetter(alpha[24])
     console.log(currentLetter)
 
     displayLetter.textContent = currentLetter.letter

@@ -88,7 +88,7 @@ const alpha = [
         "phonetic_word": "Mike",
         "pronunciation": "mike",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_mike_1537050.png"
     },
     {
         "letter": "N",
@@ -172,13 +172,13 @@ const alpha = [
         "phonetic_word": "Yankee",
         "pronunciation": "yang-key",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_yankee_2010346.png"
     },
     {
         "letter": "Z",
         "phonetic_word": "Zulu",
         "pronunciation": "zoo-loo",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Shield_163736.png"
     }
 ]
