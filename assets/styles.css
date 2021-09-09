@@ -12,7 +12,7 @@ header {
 }
 
 .display-nav {
-    padding: 44% 0;
+    padding: 165px 0;
 }
 
 #arrow-left {
@@ -85,9 +85,11 @@ header {
         width: 75%;
     }
 
-    #display-container {
+    #display-container,
+    #display-frame {
         width: 70%;
     }
+
 }
 
 /* media query for generic desktop */
@@ -96,7 +98,8 @@ header {
         width: 50%;
     }
 
-    #display-container {
+    #display-container,
+    #display-frame {
         width: 50%;
     }
 }
