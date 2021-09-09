@@ -8,19 +8,21 @@ header {
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
-    width: 90%;
+    padding: 2%;
 }
 
 .display-nav {
-    padding: 165px 0;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 12.5%;
 }
 
-#arrow-left {
-    padding-left: 15px;
-}
-
-#arrow-right {
-    padding-right: 15px;
+.display-nav > img {
+    max-height: 44px;
+    max-width: 48px;
+    width: 95%;
 }
 
 .display-nav:hover {
@@ -28,8 +30,8 @@ header {
 }
 
 #display-frame {
-    margin: 0 auto;
-    width: 90%;
+    margin: 2%;
+    width: 75%;
 }
 
 #display-letter {
@@ -85,8 +87,7 @@ header {
         width: 75%;
     }
 
-    #display-container,
-    #display-frame {
+    #display-container {
         width: 70%;
     }
 
@@ -98,8 +99,7 @@ header {
         width: 50%;
     }
 
-    #display-container,
-    #display-frame {
+    #display-container {
         width: 50%;
     }
 }

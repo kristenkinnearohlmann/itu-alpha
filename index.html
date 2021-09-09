@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Visual ITU Alphabet</title>
-        <link rel="stylesheet" href="assets/styles.css"
+        <link rel="stylesheet" href="./assets/styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
         <header>
@@ -11,14 +12,18 @@
         </header>
         <main>
             <div id="display-container">
-                <div class="display-nav" id="arrow-left"><img src="./assets/img/arrow-left.png" alt="back" /></div>
+                <div class="display-nav" id="arrow-left">
+                    <img src="./assets/img/arrow-left.png" alt="back" />
+                </div>
                 <div id="display-frame">
                     <div id="display-letter"></div>
                     <div id="display-letter-img"></div>
                     <div id="phonetic-word"></div>
                     <div id="pronounce-container"><span>pronounced</span>&nbsp;<span id="pronunciation"></span></div>
                 </div>
-                <div class="display-nav" id="arrow-right"><img src="./assets/img/arrow-right.png" alt="forward" /></div>
+                <div class="display-nav" id="arrow-right">
+                    <img src="./assets/img/arrow-right.png" alt="forward" />
+                </div>
             </div>
         </main>
         <script src="./assets/alpha.js"></script>
