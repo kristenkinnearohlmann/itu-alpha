@@ -75,3 +75,13 @@ header {
 #pronounce-container {
     margin-bottom: 15px;
 }
+
+/* media query for generic tablet */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* media query for generic desktop */
+@media only screen and (min-wdith: 768px) {
+    
+}
