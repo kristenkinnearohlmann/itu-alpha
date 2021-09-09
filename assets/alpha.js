@@ -144,28 +144,28 @@ const alpha = [
         "phonetic_word": "Uniform",
         "pronunciation": "you-nee-form",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_uniform_1696219.png"
     },
     {
         "letter": "V",
         "phonetic_word": "Victor",
         "pronunciation": "vik-tah",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Champ_3988593.png"
     },
     {
         "letter": "W",
         "phonetic_word": "Whiskey",
         "pronunciation": "wiss-key",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_whiskey_2087245.png"
     },
     {
         "letter": "X",
         "phonetic_word": "X-ray",
         "pronunciation": "ecks-ray",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_X-Ray_1964169.png"
     },
     {
         "letter": "Y",
