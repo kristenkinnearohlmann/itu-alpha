@@ -11,77 +11,77 @@ const alpha = [
         "phonetic_word": "Bravo",
         "pronunciation": "brah-voh",
         "stress_syllable": [1,2],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_bravo_2285568.png"
     },
     {
         "letter": "C",
         "phonetic_word": "Charlie",
         "pronunciation": "char-lee",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_hat_2250310.png"
     },
     {
         "letter": "D",
         "phonetic_word": "Delta",
         "pronunciation": "dell-tah",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Delta_43529.png"
     },
     {
         "letter": "E",
         "phonetic_word": "Echo",
         "pronunciation": "eck-oh",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_echo_27202.png"
     },
     {
         "letter": "F",
         "phonetic_word": "Foxtrot",
         "pronunciation": "foks-trot",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_foxtrot_2010336.png"
     },
     {
         "letter": "G",
         "phonetic_word": "Golf",
         "pronunciation": "golf",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Golf_972548.png"
     },
     {
         "letter": "H",
         "phonetic_word": "Hotel",
         "pronunciation": "hoh-tell",
         "stress_syllable": [2],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_motel_4219007.png"
     },
     {
         "letter": "I",
         "phonetic_word": "India",
         "pronunciation": "in-dee-ah",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Taj Mahal_1878000.png"
     },
     {
         "letter": "J",
         "phonetic_word": "Juliet",
         "pronunciation": "jew-lee-ett",
         "stress_syllable": [1,3],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_girl_4173142.png"
     },
     {
         "letter": "K",
         "phonetic_word": "Kilo",
         "pronunciation": "kee-loh",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_Weight_1990674.png"
     },
     {
         "letter": "L",
         "phonetic_word": "Lima",
         "pronunciation": "lee-mah",
         "stress_syllable": [1],
-        "symbol_img_src": ""
+        "symbol_img_src": "./assets/img/noun_beans_2484508.png"
     },
     {
         "letter": "M",
