@@ -6,22 +6,18 @@ let alphaPosition = 0
 
 // Initialize functions
 const init = () => {
-    console.log('Starting ITU Alphabet')
     loadAlphaItems()
     displayAlpha()
 }
 
 // Function definitions
-const loadAlphaItems = () => {
-    console.log(alpha)    
+const loadAlphaItems = () => { 
     return alpha
 }
 
 const displayAlpha = () => {
-    console.log('Display function')
 
     const currentLetter = new AlphaLetter(alpha[alphaPosition])
-    console.log(currentLetter)
 
     displayLetter.textContent = currentLetter.letter
     // TODO: Move to class file
