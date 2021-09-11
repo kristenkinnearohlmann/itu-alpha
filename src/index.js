@@ -2,16 +2,23 @@ const displayLetter = document.getElementById('display-letter')
 const displayLetterImg = document.getElementById('display-letter-img')
 const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
-const origYear = "2021"
+const copyYears = document.getElementById('copy-years')
 let alphaPosition = 0
 
 // Initialize functions
 const init = () => {
+    setCopyYears()
     loadAlphaItems()
     displayAlpha()
 }
 
 // Function definitions
+const setCopyYears = () => {
+    const originalYear = 2021
+    const currentDate = new Date()
+    copyYears.innerText = (originalYear === currentDate.getFullYear() ? `${originalYear}` : `${originalYear} - ${currentDate.getFullYear()}`)
+}
+
 const loadAlphaItems = () => { 
     return alpha
 }
