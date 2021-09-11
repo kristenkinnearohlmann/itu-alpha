@@ -2,6 +2,7 @@ const displayLetter = document.getElementById('display-letter')
 const displayLetterImg = document.getElementById('display-letter-img')
 const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
+const origYear = "2021"
 let alphaPosition = 0
 
 // Initialize functions
