@@ -30,4 +30,12 @@ class AlphaLetter {
             }
         }).join('-')
     }
+
+    renderLetterImg() {
+        if (this.symbolImgSrc) {
+            return `<div><img class="img-display-200 img-reduce" src="${this.symbolImgSrc}" /></div>`
+        } else {
+            return '<div id="no-img"><span>No image available</span></div>'
+        }
+    }
 }

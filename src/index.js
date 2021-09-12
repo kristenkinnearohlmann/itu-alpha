@@ -28,12 +28,7 @@ const displayAlpha = () => {
     const currentLetter = new AlphaLetter(alpha[alphaPosition])
 
     displayLetter.textContent = currentLetter.letter
-    // TODO: Move to class file
-    if (currentLetter.symbolImgSrc) {
-        displayLetterImg.innerHTML = `<div><img class="img-display-200 img-reduce" src="${currentLetter.symbolImgSrc}" /></div>`
-    } else {
-        displayLetterImg.innerHTML = '<div id="no-img"><span>No image available</span></div>'
-    }
+    displayLetterImg.innerHTML = currentLetter.renderLetterImg()
     
     phoneticWord.textContent = currentLetter.phoneticWord
     pronunciation.innerHTML = currentLetter.stressPronounce()
