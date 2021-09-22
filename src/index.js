@@ -64,5 +64,13 @@ document.getElementById('display-letter').addEventListener('click', () => {
     changeDisplayLetter()
 })
 
+document.getElementById('change-letter-input').addEventListener('onBlur', () => {
+    console.log('changeLetter was blurred')
+})
+
+document.getElementById('change-letter-input').addEventListener('keyup', event => {
+    console.log(event)
+})
+
 // Load page
 init()
