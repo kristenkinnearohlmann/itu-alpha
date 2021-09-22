@@ -38,7 +38,14 @@ footer {
 #display-letter,
 .change-letter {
     font-size: 5rem;
+    margin-bottom: 5px;
     text-align: center;
+}
+
+#change-letter-input {
+    font-family: serif;
+    margin-bottom: 5px;
+    width: 200px;
 }
 
 #display-letter-img {

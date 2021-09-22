@@ -44,7 +44,7 @@ const changeDisplayLetter = () => {
     console.log(displayLetter)
     displayLetter.classList.add("hidden")
     changeLetter.classList.remove("hidden")
-    changeLetter.innerHTML = `<input type="text" value=${currentLetter.letter} />`
+    changeLetter.innerHTML = `<input class="change-letter" id="change-letter-input" type="text" value=${currentLetter.letter} />`
 }
 
 document.getElementById('arrow-left').addEventListener('click', () => {
