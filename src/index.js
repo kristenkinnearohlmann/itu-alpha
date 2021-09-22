@@ -42,7 +42,8 @@ const changeDisplayLetter = () => {
     displayLetter.classList.add("hidden")
     changeLetter.classList.remove("hidden")
 
-    changeLetter.innerHTML = `<input class="change-letter" id="change-letter-input" type="text" value=${currentLetter.letter} />`
+    // changeLetter.innerHTML = `<input class="change-letter" id="change-letter-input" type="text" value=${currentLetter.letter} />`
+    document.getElementById('change-letter-input').placeholder = 'hello'
     
     const changeLetterInput = document.getElementById('change-letter-input')
     
@@ -64,13 +65,12 @@ document.getElementById('display-letter').addEventListener('click', () => {
     changeDisplayLetter()
 })
 
-document.getElementById('change-letter-input').addEventListener('onBlur', () => {
-    console.log('changeLetter was blurred')
-})
+const input = document.getElementById('change-letter-input')
+input.addEventListener('input', doWork)
 
-document.getElementById('change-letter-input').addEventListener('keyup', event => {
-    console.log(event)
-})
+function doWork(e) {
+    console.log(e.target.value)
+}
 
 // Load page
 init()
