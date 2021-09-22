@@ -27,7 +27,6 @@ const loadAlphaItems = () => {
 
 const displayAlpha = () => {
 
-    // const currentLetter = new AlphaLetter(alpha[alphaPosition])
     currentLetter = new AlphaLetter(alpha[alphaPosition])
 
     displayLetter.textContent = currentLetter.letter
@@ -42,8 +41,7 @@ const changeDisplayLetter = () => {
     displayLetter.classList.add("hidden")
     changeLetter.classList.remove("hidden")
 
-    // changeLetter.innerHTML = `<input class="change-letter" id="change-letter-input" type="text" value=${currentLetter.letter} />`
-    document.getElementById('change-letter-input').placeholder = 'hello'
+    document.getElementById('change-letter-input').placeholder = currentLetter.letter
     
     const changeLetterInput = document.getElementById('change-letter-input')
     
@@ -65,12 +63,9 @@ document.getElementById('display-letter').addEventListener('click', () => {
     changeDisplayLetter()
 })
 
-const input = document.getElementById('change-letter-input')
-input.addEventListener('input', doWork)
-
-function doWork(e) {
-    console.log(e.target.value)
-}
+document.getElementById('change-letter-input').addEventListener('keyup',(event) => {
+    console.log(event)
+})
 
 // Load page
 init()
