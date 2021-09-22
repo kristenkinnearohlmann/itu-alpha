@@ -65,6 +65,7 @@ document.getElementById('display-letter').addEventListener('click', () => {
 
 document.getElementById('change-letter-input').addEventListener('keyup',(event) => {
     console.log(event)
+    console.log(alpha)
 })
 
 // Load page
