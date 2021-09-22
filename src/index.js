@@ -39,12 +39,15 @@ const displayAlpha = () => {
 }
 
 const changeDisplayLetter = () => {
-    console.log('In changeLetter')
-    console.log(currentLetter)
-    console.log(displayLetter)
     displayLetter.classList.add("hidden")
     changeLetter.classList.remove("hidden")
+
     changeLetter.innerHTML = `<input class="change-letter" id="change-letter-input" type="text" value=${currentLetter.letter} />`
+    
+    const changeLetterInput = document.getElementById('change-letter-input')
+    
+    changeLetterInput.focus()
+    changeLetterInput.select()
 }
 
 document.getElementById('arrow-left').addEventListener('click', () => {
