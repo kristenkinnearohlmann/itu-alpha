@@ -38,4 +38,5 @@ class AlphaLetter {
             return '<div id="no-img"><span>No image available</span></div>'
         }
     }
+
 }

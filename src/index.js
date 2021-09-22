@@ -4,6 +4,7 @@ const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
 const copyYears = document.getElementById('copy-years')
 let alphaPosition = 0
+let currentLetter = ""
 
 // Initialize functions
 const init = () => {
@@ -25,7 +26,8 @@ const loadAlphaItems = () => {
 
 const displayAlpha = () => {
 
-    const currentLetter = new AlphaLetter(alpha[alphaPosition])
+    // const currentLetter = new AlphaLetter(alpha[alphaPosition])
+    currentLetter = new AlphaLetter(alpha[alphaPosition])
 
     displayLetter.textContent = currentLetter.letter
     displayLetterImg.innerHTML = currentLetter.renderLetterImg()
@@ -33,6 +35,13 @@ const displayAlpha = () => {
     phoneticWord.textContent = currentLetter.phoneticWord
     pronunciation.innerHTML = currentLetter.stressPronounce()
 
+}
+
+const changeLetter = () => {
+    console.log('In changeLetter')
+    console.log(currentLetter)
+    console.log(displayLetter)
+    displayLetter.innerHTML = `<input type="text" value=${currentLetter.letter} />`
 }
 
 document.getElementById('arrow-left').addEventListener('click', () => {
@@ -43,6 +52,10 @@ document.getElementById('arrow-left').addEventListener('click', () => {
 document.getElementById('arrow-right').addEventListener('click', () => {
     alphaPosition === 25 ? alphaPosition = 0 : alphaPosition++
     displayAlpha()
+})
+
+document.getElementById('display-letter').addEventListener('click', () => {
+    changeLetter()
 })
 
 // Load page
