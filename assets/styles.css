@@ -35,7 +35,8 @@ footer {
     width: 75%;
 }
 
-#display-letter {
+#display-letter,
+.change-letter {
     font-size: 5rem;
     text-align: center;
 }
@@ -80,6 +81,10 @@ footer {
 
 #pronounce-container {
     margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* media query for generic tablet */

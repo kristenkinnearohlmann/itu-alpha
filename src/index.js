@@ -1,4 +1,5 @@
 const displayLetter = document.getElementById('display-letter')
+const changeLetter = document.getElementById('change-letter')
 const displayLetterImg = document.getElementById('display-letter-img')
 const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
@@ -37,11 +38,13 @@ const displayAlpha = () => {
 
 }
 
-const changeLetter = () => {
+const changeDisplayLetter = () => {
     console.log('In changeLetter')
     console.log(currentLetter)
     console.log(displayLetter)
-    displayLetter.innerHTML = `<input type="text" value=${currentLetter.letter} />`
+    displayLetter.classList.add("hidden")
+    changeLetter.classList.remove("hidden")
+    changeLetter.innerHTML = `<input type="text" value=${currentLetter.letter} />`
 }
 
 document.getElementById('arrow-left').addEventListener('click', () => {
@@ -55,7 +58,7 @@ document.getElementById('arrow-right').addEventListener('click', () => {
 })
 
 document.getElementById('display-letter').addEventListener('click', () => {
-    changeLetter()
+    changeDisplayLetter()
 })
 
 // Load page
