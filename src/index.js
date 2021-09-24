@@ -49,6 +49,12 @@ const changeDisplayLetter = () => {
     changeLetterInput.select()
 }
 
+const updateDisplayLetter = (event) => {
+    console.log('Update display letter')
+    console.log(event)
+    console.log(alpha)
+}
+
 document.getElementById('arrow-left').addEventListener('click', () => {
     alphaPosition === 0 ? alphaPosition = 25 : alphaPosition--
     displayAlpha()
@@ -63,9 +69,16 @@ document.getElementById('display-letter').addEventListener('click', () => {
     changeDisplayLetter()
 })
 
-document.getElementById('change-letter-input').addEventListener('keyup',(event) => {
-    console.log(event)
-    console.log(alpha)
+document.getElementById('change-letter-input').addEventListener('keyup', (event) => {
+    console.log('Changeletter keyup')
+    if (event.key === 'Enter') {
+        updateDisplayLetter(event)
+    }
+})
+
+document.getElementById('change-letter-input').addEventListener('blur',(event) => {
+    console.log('Change letter focus out')
+    updateDisplayLetter(event)
 })
 
 // Load page
