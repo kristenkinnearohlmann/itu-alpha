@@ -1,4 +1,5 @@
 header,
+.main-content,
 footer {
     margin: 0 auto;
     width: 95%;
@@ -35,9 +36,17 @@ footer {
     width: 75%;
 }
 
-#display-letter {
+#display-letter,
+.change-letter {
     font-size: 5rem;
+    margin-bottom: 5px;
     text-align: center;
+}
+
+#change-letter-input {
+    font-family: serif;
+    margin-bottom: 5px;
+    width: 200px;
 }
 
 #display-letter-img {
@@ -82,9 +91,14 @@ footer {
     margin-bottom: 15px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* media query for generic tablet */
 @media only screen and (min-width: 600px) {
     header,
+    .main-content,
     footer {
         width: 75%;
     }
@@ -98,6 +112,7 @@ footer {
 /* media query for generic desktop */
 @media only screen and (min-width: 768px) {
     header,
+    .main-content,
     footer {
         width: 50%;
     }
