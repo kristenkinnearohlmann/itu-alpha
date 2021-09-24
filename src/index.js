@@ -1,5 +1,6 @@
 const displayLetter = document.getElementById('display-letter')
 const changeLetter = document.getElementById('change-letter')
+const changeLetterInput = document.getElementById('change-letter-input')
 const displayLetterImg = document.getElementById('display-letter-img')
 const phoneticWord = document.getElementById('phonetic-word')
 const pronunciation = document.getElementById('pronunciation')
@@ -38,23 +39,33 @@ const displayAlpha = () => {
 }
 
 const changeDisplayLetter = () => {
+    console.log('In changeDisplayLetter')
+    console.log(displayLetter.classList)
+    console.log(changeLetter.classList)
     displayLetter.classList.add("hidden")
     changeLetter.classList.remove("hidden")
 
-    document.getElementById('change-letter-input').placeholder = currentLetter.letter
-    
-    const changeLetterInput = document.getElementById('change-letter-input')
-    
+    changeLetterInput.placeholder = currentLetter.letter
+      
     changeLetterInput.focus()
     changeLetterInput.select()
 }
 
 const updateDisplayLetter = (event) => {
     console.log('Update display letter')
-    console.log(event.target.value.toUpperCase())
-    console.log(alpha)
-    console.log(alpha.find(obj => obj.letter === event.target.value.toUpperCase())
-    )
+    console.log(currentLetter)
+    const newLetter = event.target.value.toUpperCase()
+    console.log(newLetter)
+    console.log(alpha.map(element => element.letter))
+    const newLetterPosition = alpha.map(element => element.letter).indexOf(event.target.value.toUpperCase())
+    console.log(alpha[newLetterPosition])
+    alphaPosition = newLetterPosition
+
+    changeLetterInput.placeholder = newLetter
+    changeLetter.classList.add("hidden")
+    displayLetter.classList.remove("hidden")
+    displayAlpha()
+
 }
 
 document.getElementById('arrow-left').addEventListener('click', () => {
@@ -68,17 +79,20 @@ document.getElementById('arrow-right').addEventListener('click', () => {
 })
 
 document.getElementById('display-letter').addEventListener('click', () => {
+    console.log('Clicked letter to change')
     changeDisplayLetter()
 })
 
-document.getElementById('change-letter-input').addEventListener('keyup', (event) => {
+changeLetterInput.addEventListener('keyup', (event) => {
     console.log('Changeletter keyup')
-    if (event.key === 'Enter') {
+    const keyPressed = event.key
+
+    if (keyPressed === 'Enter') {
         updateDisplayLetter(event)
     }
 })
 
-document.getElementById('change-letter-input').addEventListener('blur',(event) => {
+changeLetterInput.addEventListener('blur',(event) => {
     console.log('Change letter focus out')
     updateDisplayLetter(event)
 })
