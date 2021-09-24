@@ -51,8 +51,10 @@ const changeDisplayLetter = () => {
 
 const updateDisplayLetter = (event) => {
     console.log('Update display letter')
-    console.log(event)
+    console.log(event.target.value.toUpperCase())
     console.log(alpha)
+    console.log(alpha.find(obj => obj.letter === event.target.value.toUpperCase())
+    )
 }
 
 document.getElementById('arrow-left').addEventListener('click', () => {
