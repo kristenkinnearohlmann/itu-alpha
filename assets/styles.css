@@ -1,130 +1,132 @@
 header,
 .main-content,
 footer {
-    margin: 0 auto;
-    width: 95%;
+  margin: 0 auto;
+  width: 95%;
 }
 
 #display-container {
-    border: 1px solid grey;
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0 auto;
-    padding: 2%;
+  border: 1px solid grey;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  padding: 2%;
 }
 
 .display-nav {
-    align-items: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: 12.5%;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 12.5%;
 }
 
 .display-nav > img {
-    max-height: 44px;
-    max-width: 48px;
-    width: 95%;
+  max-height: 44px;
+  max-width: 48px;
+  width: 95%;
 }
 
 .display-nav:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #display-frame {
-    margin: 2%;
-    width: 75%;
+  margin: 2%;
+  width: 75%;
+}
+
+.letter-entry {
 }
 
 #display-letter,
 .change-letter {
-    font-size: 5rem;
-    margin-bottom: 5px;
-    text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 #change-letter-input {
-    font-family: serif;
-    margin-bottom: 5px;
-    width: 200px;
+  font-family: serif;
+  margin-bottom: 5px;
+  width: 200px;
 }
 
 #display-letter-img {
-    border: 2px grey solid;
-    height: 200px;
-    margin: 0 auto;
-    width: 200px;
+  border: 2px grey solid;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
 }
 
 .img-display-200 {
-    height: 200px;
-    margin: 0 auto;
-    padding: 5px;
-    width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 200px;
 }
 
 .img-reduce {
-    height: 195px;
-    width: 195px;
+  height: 195px;
+  width: 195px;
 }
 
 #no-img {
-    padding-bottom: 90px;
-    padding-top: 90px;
-    text-align: center;
-    width: 100%;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  text-align: center;
+  width: 100%;
 }
 
 #phonetic-word {
-    font-size: 2rem;
-    margin-top: 15px;
-    text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+  text-align: center;
 }
 
 #pronounce-container,
 #pronunciation {
-    font-size: 1.25rem;
-    text-align: center;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 #pronounce-container {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* media query for generic tablet */
 @media only screen and (min-width: 600px) {
-    header,
-    .main-content,
-    footer {
-        width: 75%;
-    }
+  header,
+  .main-content,
+  footer {
+    width: 75%;
+  }
 
-    #display-container {
-        width: 70%;
-    }
-
+  #display-container {
+    width: 70%;
+  }
 }
 
 /* media query for generic desktop */
 @media only screen and (min-width: 768px) {
-    header,
-    .main-content,
-    footer {
-        width: 50%;
-    }
+  header,
+  .main-content,
+  footer {
+    width: 50%;
+  }
 
-    #display-container {
-        width: 50%;
-    }
+  #display-container {
+    width: 50%;
+  }
 }
 
 /* media query for less than 300px */
 @media only screen and (max-width: 299px) {
-    #display-letter-img {
-        width: 100%;
-    }
+  #display-letter-img {
+    width: 100%;
+  }
 }

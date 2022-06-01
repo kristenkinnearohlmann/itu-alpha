@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Visual ITU Alphabet</title>
-        <link rel="stylesheet" href="./assets/styles.css">
-        <link rel="icon" href="./assets/img/favicon.ico">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <h1>Visual ITU Alphabet</h1>
-            <p>Learn and remember the ITU alphabet for use in ham radio operations.</p>
-        </header>
-        <main>
-            <div id="display-container">
-                <div class="display-nav" id="arrow-left">
-                    <img src="./assets/img/arrow-left.png" alt="back" />
-                </div>
-                <div id="display-frame">
-                    <div id="display-letter"></div>
-                    <div class="hidden change-letter" id="change-letter"><input class="change-letter" id="change-letter-input" type="text" maxLength="1" pattern="[A-Za-z]{1}" /></div>
-                    <div id="display-letter-img"></div>
-                    <div id="phonetic-word"></div>
-                    <div id="pronounce-container"><span>pronounced</span>&nbsp;<span id="pronunciation"></span></div>
-                </div>
-                <div class="display-nav" id="arrow-right">
-                    <img src="./assets/img/arrow-right.png" alt="forward" />
-                </div>
+  <head>
+    <title>Visual ITU Alphabet</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Visual ITU Alphabet</h1>
+      <p>
+        Learn and remember the ITU alphabet for use in ham radio operations.
+      </p>
+    </header>
+    <main>
+      <div id="display-container">
+        <div class="display-nav" id="arrow-left">
+          <img src="./assets/img/arrow-left.png" alt="back" />
+        </div>
+        <div id="display-frame">
+          <div class="letter-entry">
+            <div id="display-letter"></div>
+            <div class="hidden change-letter" id="change-letter">
+              <input
+                class="change-letter"
+                id="change-letter-input"
+                type="text"
+                maxlength="1"
+                pattern="[A-Za-z]{1}"
+              />
             </div>
-            <div class="main-content">
-                <p>To jump to a new letter, click the current letter and enter the new letter. To step through the letters, use the arrow navigation.</p>
-            </div>
-        </main>
-        <footer>
-            <p>
-                <small>
-                    &copy; Copyright <span id="copy-years"></span>, <a href="https://kristenkinnearohlmann.dev/">kristenkinnearohlmann</a> | <a href="https://github.com/kristenkinnearohlmann/itu-alpha">Github repository</a>
-                </small>
-            </p>
-        </footer>
-        <script src="./assets/alpha.js"></script>
-        <script src="./src/alphaletter.js"></script>
-        <script src="./src/index.js"></script>
-    </body>
+          </div>
+          <div id="display-letter-img"></div>
+          <div id="phonetic-word"></div>
+          <div id="pronounce-container">
+            <span>pronounced</span>&nbsp;<span id="pronunciation"></span>
+          </div>
+        </div>
+        <div class="display-nav" id="arrow-right">
+          <img src="./assets/img/arrow-right.png" alt="forward" />
+        </div>
+      </div>
+      <div class="main-content">
+        <p>
+          To jump to a new letter, click the current letter and enter the new
+          letter. To step through the letters, use the arrow navigation.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <small>
+          &copy; Copyright <span id="copy-years"></span>,
+          <a href="https://kristenkinnearohlmann.dev/">kristenkinnearohlmann</a>
+          |
+          <a href="https://github.com/kristenkinnearohlmann/itu-alpha"
+            >Github repository</a
+          >
+        </small>
+      </p>
+    </footer>
+    <script src="./assets/alpha.js"></script>
+    <script src="./src/alphaletter.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
 </html>
