@@ -39,6 +39,15 @@ footer {
 .letter-entry {
 }
 
+.letter-input {
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5rem;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+
 #display-letter,
 .change-letter {
   font-size: 5rem;
