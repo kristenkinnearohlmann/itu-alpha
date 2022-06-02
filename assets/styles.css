@@ -39,15 +39,19 @@ footer {
 }
 
 .letter-entry {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .letter-input {
   border: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 5rem;
-  margin-bottom: 5px;
   text-align: center;
-  width: 100%;
+  width: 200px;
 }
 
 #display-letter {
@@ -102,10 +106,6 @@ footer {
 
 #pronounce-container {
   margin-bottom: 15px;
-}
-
-.hidden {
-  display: none;
 }
 
 /* media query for generic tablet */
