@@ -1,6 +1,5 @@
 const displayLetter = document.getElementById("display-letter");
 const changeLetter = document.getElementById("change-letter");
-const changeLetterInput = document.getElementById("change-letter-input");
 const letterInputEntry = document.getElementById("letter-input-entry");
 const displayLetterImg = document.getElementById("display-letter-img");
 const phoneticWord = document.getElementById("phonetic-word");
@@ -33,25 +32,12 @@ const loadAlphaItems = () => {
 const displayAlpha = () => {
   currentLetter = new AlphaLetter(alpha[alphaPosition]);
 
-  //   displayLetter.textContent = currentLetter.letter;
-  //   console.log(currentLetter.letter);
-  //   letterInputEntry.placeholder = currentLetter.letter;
   letterInputEntry.value = currentLetter.letter;
   letterInputEntry.blur();
   displayLetterImg.innerHTML = currentLetter.renderLetterImg();
 
   phoneticWord.textContent = currentLetter.phoneticWord;
   pronunciation.innerHTML = currentLetter.stressPronounce();
-};
-
-const changeDisplayLetter = () => {
-  displayLetter.classList.add("hidden");
-  changeLetter.classList.remove("hidden");
-
-  changeLetterInput.placeholder = currentLetter.letter;
-
-  changeLetterInput.focus();
-  changeLetterInput.select();
 };
 
 const updateDisplayLetter = (event) => {
@@ -64,7 +50,6 @@ const updateDisplayLetter = (event) => {
   changeLetter.classList.add("hidden");
   displayLetter.classList.remove("hidden");
   displayAlpha();
-  changeLetterInput.value = "";
 };
 
 document.getElementById("arrow-left").addEventListener("click", () => {
@@ -81,27 +66,11 @@ document.getElementById("display-letter").addEventListener("click", () => {
   changeDisplayLetter();
 });
 
-changeLetterInput.addEventListener("keyup", (event) => {
-  const keyPressed = event.key;
-
-  if (keyPressed === "Enter") {
-    updateDisplayLetter(event);
-  }
-});
-
-changeLetterInput.addEventListener("blur", (event) => {
-  // invoke only if the blur occurs when the input is display
-  if (!changeLetter.classList.contains("hidden")) {
-    updateDisplayLetter(event);
-  }
-});
-
 letterInputEntry.addEventListener("click", (event) => {
   letterInputEntry.value = "";
 });
 
 letterInputEntry.addEventListener("blur", (event) => {
-  //   window.alert("Blurred new input");
   updateDisplayLetter(event);
 });
 
@@ -109,7 +78,6 @@ letterInputEntry.addEventListener("keyup", (event) => {
   const keyPressed = event.key;
 
   if (keyPressed === "Enter") {
-    // window.alert("Enter keyup new input");
     updateDisplayLetter(event);
   }
 });
