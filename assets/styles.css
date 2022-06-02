@@ -48,8 +48,7 @@ footer {
   width: 100%;
 }
 
-#display-letter,
-.change-letter {
+#display-letter {
   font-size: 5rem;
   margin-bottom: 5px;
   text-align: center;

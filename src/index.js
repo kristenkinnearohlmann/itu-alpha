@@ -1,5 +1,4 @@
 const displayLetter = document.getElementById("display-letter");
-const changeLetter = document.getElementById("change-letter");
 const letterInputEntry = document.getElementById("letter-input-entry");
 const displayLetterImg = document.getElementById("display-letter-img");
 const phoneticWord = document.getElementById("phonetic-word");
@@ -47,7 +46,6 @@ const updateDisplayLetter = (event) => {
     .indexOf(newLetter);
   alphaPosition = newLetterPosition;
 
-  changeLetter.classList.add("hidden");
   displayLetter.classList.remove("hidden");
   displayAlpha();
 };
