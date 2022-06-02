@@ -1,4 +1,3 @@
-const displayLetter = document.getElementById("display-letter");
 const letterInputEntry = document.getElementById("letter-input-entry");
 const displayLetterImg = document.getElementById("display-letter-img");
 const phoneticWord = document.getElementById("phonetic-word");
@@ -64,6 +63,9 @@ letterInputEntry.addEventListener("click", (event) => {
 });
 
 letterInputEntry.addEventListener("blur", (event) => {
+  if (letterInputEntry.value.length === 0) {
+    letterInputEntry.value = currentLetter.letter;
+  }
   updateDisplayLetter(event);
 });
 

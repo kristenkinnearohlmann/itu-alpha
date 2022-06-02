@@ -31,7 +31,9 @@ footer {
   cursor: pointer;
 }
 
-#display-frame {
+.display-frame {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 2%;
   width: 75%;
 }
