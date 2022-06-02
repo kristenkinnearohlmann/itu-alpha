@@ -46,7 +46,6 @@ const updateDisplayLetter = (event) => {
     .indexOf(newLetter);
   alphaPosition = newLetterPosition;
 
-  displayLetter.classList.remove("hidden");
   displayAlpha();
 };
 
@@ -58,10 +57,6 @@ document.getElementById("arrow-left").addEventListener("click", () => {
 document.getElementById("arrow-right").addEventListener("click", () => {
   alphaPosition === 25 ? (alphaPosition = 0) : alphaPosition++;
   displayAlpha();
-});
-
-document.getElementById("display-letter").addEventListener("click", () => {
-  changeDisplayLetter();
 });
 
 letterInputEntry.addEventListener("click", (event) => {
