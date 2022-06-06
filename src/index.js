@@ -73,6 +73,9 @@ letterInputEntry.addEventListener("keyup", (event) => {
   const keyPressed = event.key;
 
   if (keyPressed === "Enter") {
+    if (letterInputEntry.value.length === 0) {
+      letterInputEntry.value = currentLetter.letter;
+    }
     updateDisplayLetter(event);
   }
 });
