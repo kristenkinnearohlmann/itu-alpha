@@ -9,6 +9,17 @@ footer {
   width: 95%;
 }
 
+.title-toggle {
+  align-content: center;
+  display: flex;
+  padding: 0 10px;
+}
+
+.title-toggle div:last-child {
+  background-color: blueviolet;
+  margin-left: auto;
+}
+
 #display-container {
   border: 1px solid grey;
   display: flex;
