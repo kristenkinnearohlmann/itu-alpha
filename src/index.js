@@ -1,3 +1,4 @@
+const modeToggle = document.getElementById("toggle-input");
 const letterInputEntry = document.getElementById("letter-input-entry");
 const displayLetterImg = document.getElementById("display-letter-img");
 const phoneticWord = document.getElementById("phonetic-word");
@@ -78,6 +79,12 @@ letterInputEntry.addEventListener("keyup", (event) => {
     }
     updateDisplayLetter(event);
   }
+});
+
+modeToggle.addEventListener("click", (event) => {
+  console.log(event);
+  console.log(modeToggle.value);
+  console.log(modeToggle.checked);
 });
 
 // Load page
