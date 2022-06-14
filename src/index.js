@@ -82,9 +82,11 @@ letterInputEntry.addEventListener("keyup", (event) => {
 });
 
 modeToggle.addEventListener("click", (event) => {
-  console.log(event);
-  console.log(modeToggle.value);
-  console.log(modeToggle.checked);
+  if (modeToggle.checked) {
+    document.body.style.backgroundColor = "#8a2be2";
+  } else {
+    document.body.style.backgroundColor = "#fff";
+  }
 });
 
 // Load page
