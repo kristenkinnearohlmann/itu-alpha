@@ -51,6 +51,12 @@ const updateDisplayLetter = (event) => {
   displayAlpha();
 };
 
+const setElementStyle = (element, styles) => {
+  Object.assign(element.style, styles);
+};
+
+// Event listeners
+
 document.getElementById("arrow-left").addEventListener("click", () => {
   alphaPosition === 0 ? (alphaPosition = 25) : alphaPosition--;
   displayAlpha();
@@ -85,15 +91,23 @@ letterInputEntry.addEventListener("keyup", (event) => {
 
 modeToggle.addEventListener("click", (event) => {
   if (modeToggle.checked) {
-    document.body.style.backgroundColor = colorDark;
-    document.body.style.color = colorLight;
-    letterInputEntry.style.backgroundColor = colorDark;
-    letterInputEntry.style.color = colorLight;
+    setElementStyle(document.body, {
+      backgroundColor: colorDark,
+      color: colorLight,
+    });
+    setElementStyle(letterInputEntry, {
+      backgroundColor: colorDark,
+      color: colorLight,
+    });
   } else {
-    document.body.style.backgroundColor = colorLight;
-    document.body.style.color = colorDark;
-    letterInputEntry.style.backgroundColor = colorLight;
-    letterInputEntry.style.color = colorDark;
+    setElementStyle(document.body, {
+      backgroundColor: colorLight,
+      color: colorDark,
+    });
+    setElementStyle(letterInputEntry, {
+      backgroundColor: colorLight,
+      color: colorDark,
+    });
   }
 });
 
