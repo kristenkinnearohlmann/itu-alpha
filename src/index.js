@@ -4,6 +4,8 @@ const displayLetterImg = document.getElementById("display-letter-img");
 const phoneticWord = document.getElementById("phonetic-word");
 const pronunciation = document.getElementById("pronunciation");
 const copyYears = document.getElementById("copy-years");
+const colorLight = "#fff";
+const colorDark = "#3d3d3d";
 let alphaPosition = 0;
 let currentLetter = "";
 
@@ -83,9 +85,15 @@ letterInputEntry.addEventListener("keyup", (event) => {
 
 modeToggle.addEventListener("click", (event) => {
   if (modeToggle.checked) {
-    document.body.style.backgroundColor = "#8a2be2";
+    document.body.style.backgroundColor = colorDark;
+    document.body.style.color = colorLight;
+    letterInputEntry.style.backgroundColor = colorDark;
+    letterInputEntry.style.color = colorLight;
   } else {
-    document.body.style.backgroundColor = "#fff";
+    document.body.style.backgroundColor = colorLight;
+    document.body.style.color = colorDark;
+    letterInputEntry.style.backgroundColor = colorLight;
+    letterInputEntry.style.color = colorDark;
   }
 });
 
