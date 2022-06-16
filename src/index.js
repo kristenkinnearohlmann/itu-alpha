@@ -6,6 +6,18 @@ const pronunciation = document.getElementById("pronunciation");
 const copyYears = document.getElementById("copy-years");
 const colorLight = "#fff";
 const colorDark = "#3d3d3d";
+const colorLightValues = {
+  primary: "#fff",
+  secondary: "#fff",
+  unvisitedLink: "",
+  visitedLink: "",
+};
+const colorDarkValues = {
+  primary: "#fff",
+  secondary: "#fff",
+  unvisitedLink: "#4a0cff",
+  visitedLink: "#dcd0ff",
+};
 let alphaPosition = 0;
 let currentLetter = "";
 
