@@ -6,18 +6,6 @@ const pronunciation = document.getElementById("pronunciation");
 const copyYears = document.getElementById("copy-years");
 const colorLight = "#fff";
 const colorDark = "#3d3d3d";
-const colorLightValues = {
-  primary: "#fff",
-  secondary: "#fff",
-  unvisitedLink: "",
-  visitedLink: "",
-};
-const colorDarkValues = {
-  primary: "#fff",
-  secondary: "#fff",
-  unvisitedLink: "#4a0cff",
-  visitedLink: "#dcd0ff",
-};
 let alphaPosition = 0;
 let currentLetter = "";
 
@@ -111,6 +99,11 @@ modeToggle.addEventListener("click", (event) => {
       backgroundColor: colorDark,
       color: colorLight,
     });
+    let el = Array.from(document.getElementsByTagName("a"));
+    el.forEach((item) => {
+      item.classList.add("dark-link");
+      item.classList.remove("light-link");
+    });
   } else {
     setElementStyle(document.body, {
       backgroundColor: colorLight,
@@ -119,6 +112,11 @@ modeToggle.addEventListener("click", (event) => {
     setElementStyle(letterInputEntry, {
       backgroundColor: colorLight,
       color: colorDark,
+    });
+    let el = Array.from(document.getElementsByTagName("a"));
+    el.forEach((item) => {
+      item.classList.add("light-link");
+      item.classList.remove("dark-link");
     });
   }
 });

@@ -1,6 +1,10 @@
 :root {
-  --light: #d8dbe0;
-  --dark: #28292c;
+  --lightPrimary: #d8dbe0;
+  --lightUnvisitedLink: #0000ee;
+  --lightVisitedLink: #551a8b;
+  --darkPrimary: #28292c;
+  --darkUnvisitedLink: #0cadff;
+  --darkVisitedLink: #dcd0ff;
 }
 
 * {
@@ -33,7 +37,7 @@ label {
   position: absolute;
   width: 100%;
   height: 25px;
-  background-color: var(--light);
+  background-color: var(--lightPrimary);
   border-radius: 12px;
   cursor: pointer;
 }
@@ -52,7 +56,7 @@ label {
 }
 
 #toggle-input:checked ~ .slider {
-  background-color: var(--dark);
+  background-color: var(--darkPrimary);
 }
 
 .slider::before {
@@ -63,14 +67,14 @@ label {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: var(--dark);
+  background-color: var(--darkPrimary);
   box-shadow: none;
   transition: 0.3s;
 }
 
 #toggle-input:checked ~ .slider::before {
   transform: translateX(-22px);
-  box-shadow: inset 6px 0 0 0 var(--light);
+  box-shadow: inset 6px 0 0 0 var(--lightPrimary);
 }
 
 #display-container {
@@ -174,6 +178,22 @@ label {
 
 #pronounce-container {
   margin-bottom: 15px;
+}
+
+.light-link {
+  color: var(--lightUnvisitedLink);
+}
+
+.light-link:visited {
+  color: var(--lightVisitedLink);
+}
+
+.dark-link {
+  color: var(--darkUnvisitedLink);
+}
+
+.dark-link:visited {
+  color: var(--darkVisitedLink);
 }
 
 /* media query for generic tablet */
